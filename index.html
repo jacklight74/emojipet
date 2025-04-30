@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Pet</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="emoji" id="pet">😴</div>
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="What's on your mind?">
+            <button id="sendButton">
+                <span>➤</span>
+            </button>
+        </div>
+        <div class="response" id="response">
+            <div class="response-emoji"></div>
+            <div class="response-text"></div>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="./calm.mp3" type="audio/mp3">
+    </audio>
+    <div class="music-control">
+        <button id="musicToggle">
+            <span class="music-icon">🔊</span>
+        </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
